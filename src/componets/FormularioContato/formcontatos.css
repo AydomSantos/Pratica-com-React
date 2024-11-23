@@ -1,0 +1,69 @@
+/* Estilo do formulário */
+form {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 20px;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    width: 600px;
+    margin: 0 auto; /* Centraliza o formulário */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os campos */
+  }
+  
+  /* Estilo dos campos de entrada */
+  input {
+    width: 80%;
+    padding: 12px 15px;
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Placeholder mais visível */
+  input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Efeito ao focar no campo */
+  input:focus {
+    border-color: #4caf50; /* Verde ao focar */
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Sombra verde */
+  }
+  
+  /* Botão de envio */
+  button {
+    background-color: #4caf50; /* Verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  /* Efeito hover no botão */
+  button:hover {
+    background-color: #45a049; /* Verde mais escuro */
+    transform: scale(1.05); /* Leve aumento */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    form {
+      padding: 15px;
+    }
+  
+    input {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
